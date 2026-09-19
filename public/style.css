@@ -1,0 +1,51 @@
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Inter,Arial,sans-serif;
+  background:linear-gradient(135deg,#111827,#312e81);
+  color:#fff;
+}
+.app{width:min(680px,94%);margin:40px auto}
+.card{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.15);
+  backdrop-filter:blur(18px);
+  border-radius:28px;
+  padding:28px;
+  box-shadow:0 25px 70px rgba(0,0,0,.3);
+}
+.header{text-align:center;margin-bottom:25px}
+.badge{
+  display:inline-block;padding:6px 11px;border-radius:999px;
+  background:rgba(255,255,255,.14);font-size:11px;font-weight:800;letter-spacing:1px
+}
+h1{font-size:34px;margin:10px 0 5px}
+.header p{margin:0;color:#d1d5db}
+form{display:grid;gap:14px}
+.upload{
+  display:block;border:1.5px dashed rgba(255,255,255,.28);
+  border-radius:18px;padding:17px;cursor:pointer;background:rgba(0,0,0,.12)
+}
+.upload span{display:block;font-weight:800}
+.upload small{display:block;color:#cbd5e1;margin:5px 0 10px}
+.upload input{width:100%;color:#fff}
+.preview img{max-width:150px;max-height:150px;margin-top:10px;border-radius:12px;display:block}
+button,.download{
+  border:0;border-radius:16px;padding:15px 18px;font-weight:900;
+  font-size:16px;text-align:center;text-decoration:none;cursor:pointer
+}
+button{background:#fff;color:#111827}
+button:disabled{opacity:.5;cursor:not-allowed}
+.status{
+  margin-top:18px;padding:14px;border-radius:14px;
+  background:rgba(255,255,255,.1);text-align:center;color:#e5e7eb
+}
+.result{margin-top:25px;text-align:center}
+.result img{
+  display:block;width:100%;border-radius:18px;margin:10px 0 15px;
+  box-shadow:0 15px 40px rgba(0,0,0,.3)
+}
+.download{display:block;background:#fff;color:#111827}
+.note{font-size:12px;color:#cbd5e1;text-align:center;margin:18px 0 0}
+.hidden{display:none!important}

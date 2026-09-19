@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Photo Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <div class="header">
+        <span class="badge">AI PHOTO</span>
+        <h1>Photo Generator</h1>
+        <p>Ganti baju + background + swap wajah secara otomatis.</p>
+      </div>
+
+      <form id="form">
+        <label class="upload">
+          <span>📷 Foto utama</span>
+          <small>Foto orang yang ingin diedit</small>
+          <input id="person" name="person" type="file" accept="image/*" required />
+          <div id="personPreview" class="preview"></div>
+        </label>
+
+        <label class="upload">
+          <span>👤 Foto wajah</span>
+          <small>Wajah yang akan dipasang ke foto hasil</small>
+          <input id="face" name="face" type="file" accept="image/*" />
+          <div id="facePreview" class="preview"></div>
+        </label>
+
+        <label class="upload optional">
+          <span>👕 Baju (opsional)</span>
+          <small>Jika kosong, server memakai baju default</small>
+          <input id="garment" name="garment" type="file" accept="image/*" />
+          <div id="garmentPreview" class="preview"></div>
+        </label>
+
+        <button id="generate" type="submit">✨ GENERATE FOTO</button>
+      </form>
+
+      <div id="status" class="status hidden"></div>
+
+      <section id="resultBox" class="result hidden">
+        <h2>Hasil</h2>
+        <img id="result" alt="Hasil foto AI" />
+        <a id="download" class="download" download="hasil-ai.jpg">⬇ Download Foto</a>
+      </section>
+
+      <p class="note">
+        Gunakan foto yang Anda miliki atau punya izin untuk diedit.
+      </p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
